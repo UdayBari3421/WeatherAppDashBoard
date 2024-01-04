@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif !important;
+    color: white !important;
+}
+
+body {
+    margin: auto;
+    min-width: 100vw;
+    width: fit-content;
+    max-width: fit-content;
+    min-height: 100vh;
+    height: fit-content;
+    background: linear-gradient(168deg, #2E335A 1.62%, #1C1B33 95.72%);
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0 !important;
+}
+
+input {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+#search-container {
+    width: 100%;
+}
+
+.inputBox {
+    width: 70%;
+    border-radius: 10px;
+    background: linear-gradient(168deg, rgba(46, 51, 90, 0.26) 1.62%, rgba(28, 27, 51, 0.26) 95.72%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+#addCity {
+    height: 100%;
+    width: 15%;
+    border-radius: 10px;
+    background: rgba(74, 57, 127, 0.70);
+}
+
+#header {
+    height: 30%;
+    padding: 20px;
+}
+
+.card {
+    border: none;
+    width: 343px;
+    min-height: 175px;
+    background: url(card.svg) no-repeat center;
+    background-size: contain;
+}
+
+.card-title {
+    font-size: 3rem !important;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+.col-md-4 img {
+    box-shadow: 0px 0px 18px -2px floralwhite;
+}
+
+.col-md-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn:hover,
+.inputBox:hover {
+    background: #1C1B33 !important;
+    border: 2px solid brown;
+    font-weight: bold;
+    font-size: large;
+}
+
+#footer {
+    overflow: auto;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        padding-inline: 30px;
+    }
+
+    #search-container {
+        flex-direction: column;
+    }
+
+    #header {
+        position: sticky;
+        top: 0;
+        background: #1C1B33;
+        z-index: 11;
+    }
+
+    .inputBox {
+        width: 100%;
+    }
+
+    #addCity {
+        width: 100%;
+    }
+
+    .row {
+        display: grid !important;
+        grid-template-columns: auto auto !important;
+    }
+
+    #footer {
+        padding: 0 !important;
+        justify-content: center !important;
+    }
+
+    .main {
+        height: fit-content;
+    }
+}
