@@ -30,7 +30,10 @@ addCity.addEventListener("click", () => {
 });
 
 function isLocationPresent(location) {
-  return weatherArray.some((weather) => weather.name === location);
+  return weatherArray.some((weather) => {
+    if (weather.name === location) alert("This City Already Present");
+    return weather.name === location;
+  });
 }
 
 function renderItem(dataObj) {
